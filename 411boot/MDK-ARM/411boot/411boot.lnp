@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"411boot\startup_stm32f411xe.o"
+"411boot\ymodem.o"
+"411boot\main.o"
+"411boot\gpio.o"
+"411boot\usart.o"
+"411boot\stm32f4xx_it.o"
+"411boot\stm32f4xx_hal_msp.o"
+"411boot\system_stm32f4xx.o"
+"411boot\stm32f4xx_hal_uart.o"
+"411boot\stm32f4xx_hal_rcc.o"
+"411boot\stm32f4xx_hal_rcc_ex.o"
+"411boot\stm32f4xx_hal_flash.o"
+"411boot\stm32f4xx_hal_flash_ex.o"
+"411boot\stm32f4xx_hal_flash_ramfunc.o"
+"411boot\stm32f4xx_hal_gpio.o"
+"411boot\stm32f4xx_hal_dma_ex.o"
+"411boot\stm32f4xx_hal_dma.o"
+"411boot\stm32f4xx_hal_pwr.o"
+"411boot\stm32f4xx_hal_pwr_ex.o"
+"411boot\stm32f4xx_hal_cortex.o"
+"411boot\stm32f4xx_hal.o"
+"411boot\stm32f4xx_hal_exti.o"
+--strict --scatter "411boot\411boot.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "411boot.map" -o 411boot\411boot.axf

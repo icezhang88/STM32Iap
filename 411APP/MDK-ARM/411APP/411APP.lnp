@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"411app\startup_stm32f411xe.o"
+"411app\main.o"
+"411app\gpio.o"
+"411app\usart.o"
+"411app\stm32f4xx_it.o"
+"411app\stm32f4xx_hal_msp.o"
+"411app\stm32f4xx_hal_uart.o"
+"411app\stm32f4xx_hal_rcc.o"
+"411app\stm32f4xx_hal_rcc_ex.o"
+"411app\stm32f4xx_hal_flash.o"
+"411app\stm32f4xx_hal_flash_ex.o"
+"411app\stm32f4xx_hal_flash_ramfunc.o"
+"411app\stm32f4xx_hal_gpio.o"
+"411app\stm32f4xx_hal_dma_ex.o"
+"411app\stm32f4xx_hal_dma.o"
+"411app\stm32f4xx_hal_pwr.o"
+"411app\stm32f4xx_hal_pwr_ex.o"
+"411app\stm32f4xx_hal_cortex.o"
+"411app\stm32f4xx_hal.o"
+"411app\stm32f4xx_hal_exti.o"
+"411app\system_stm32f4xx.o"
+--strict --scatter "411APP\411APP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "411APP.map" -o 411APP\411APP.axf
